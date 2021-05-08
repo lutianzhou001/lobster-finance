@@ -2,8 +2,8 @@
   <Layout>
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16 mt-8">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="leading-tight">Gridsome Portfolio Starter</div>
-        <div class="text-green-700 leading-tight">Powered by Vue.js &amp; Tailwind v1</div>
+        <div class="leading-tight">We Never HODL Ethereum</div>
+        <div class="text-green-700 leading-tight">We just keep them for the next generation</div>
       </div>
       <div class="mt-8 sm:mt-0">
         <g-image src="../../static/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
@@ -11,7 +11,7 @@
     </div> <!-- end hero -->
 
     <div class="container-inner mx-auto">
-      <p class="text-lg sm:text-xl">This gridsome theme was forked from my <a href="https://andremadarang.com">personal website</a>. I added more features and decided to release it as an open source project. Check it out on <a href="https://github.com/drehimself/gridsome-portfolio-starter">GitHub</a> or check out the <a href="https://www.youtube.com/watch?v=uHo6o1TNQeE">screencast I did</a>. Feel free to use it for your own site or projects! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, repellat. Dolores iure, quas perspiciatis rerum quaerat atque eum repellat autem.</p>
+      <p class="text-lg sm:text-xl">Most of us cannot hodl the ethereum and sometimes we sold it in a very low price. How to solve our short hand? Now you can transfer your Ethereum to LOBSTER and unlike LP tokens, the LOBSTER is a liquidity proof. When your sell the LOBSTER or transfer them, some of the LOBSTER will be burnt permanently.</p>
 
       <div class="flex justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
@@ -24,9 +24,29 @@
     </div>
 
     <div class="overflow-x-hidden">
+
+
+
+
       <div id="projects" style="position: relative; top: -40px; left: 0"/>
       <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
-        <h2 class="font-bold mb-6">Here are some projects I've worked on:</h2>
+
+
+        <div class="w-full mb-12">
+          <label class="block text-copy-primary mb-2" for="message">
+            ETHEREUM
+          </label>
+          <textarea id="ETHEREUM" rows="1" name="message" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4" placeholder="" required></textarea>
+        </div>
+
+        <div class="w-full mb-12">
+          <label class="block text-copy-primary mb-2" for="message">
+            LOBSTER
+          </label>
+          <textarea id="LOBSTER" rows="1" name="message" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4" placeholder="" required></textarea>
+        </div>
+
+        <h2 class="font-bold mb-6">Here are some features of LOBSTER</h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
@@ -34,45 +54,45 @@
 
         <ul class="text-lg sm:text-xl space-y-6">
           <li class="checkmark">
-            <div>Project One</div>
-            <div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
+            <div>Buy Free</div>
+            <div class="text-lg text-gray-600">Unlike <a href="https://uniswap.org">Uniswap</a>, Buying LOBSTER is totally free except gas fees</div>
           </li>
           <li class="checkmark">
-            <div>Project Two</div>
-            <div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
+            <div>Sell&Transfer Burns</div>
+            <div class="text-lg text-gray-600">It burns a 37.5% of LOBSTER when anyone sells or transfer the LOBSTER. Whenever LOBSTER is burned, its price is automatically boosted as a result of the reduced total supply.</div>
           </li>
           <li class="checkmark">
-            <div>Project Three</div>
-            <div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
+            <div>Floor Price</div>
+            <div class="text-lg text-gray-600">DO NOT worried about LOBSTER will drop to zero for an initial of 21000 LOBSTER and 2100 Ethereum are distributed here.In that case, the floor price of LOBSTER will be 0.1 Eth</div>
           </li>
           <li class="checkmark">
-            <div>Project Four</div>
-            <div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
+            <div>Fair Lauch</div>
+            <div class="text-lg text-gray-600">We will launch this experiment in and ..No presale. No premine. No farming.</div>
           </li>
 
         </ul>
       </div> <!-- end projects -->
     </div>
 
-    <div class="overflow-x-hidden border-gray-200 border-b">
-      <div id="about" style="position: relative; top: -40px; left: 0"/>
-      <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
-        <h2 class="font-bold mb-6">Get to know me:</h2>
+<!--    <div class="overflow-x-hidden border-gray-200 border-b">-->
+<!--      <div id="about" style="position: relative; top: -40px; left: 0"/>-->
+<!--      <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">-->
+<!--        <h2 class="font-bold mb-6">Get to know me:</h2>-->
 
-        <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
-          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
-        </div>
+<!--        <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">-->
+<!--          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>-->
+<!--        </div>-->
 
-        <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
-          <div><g-image src="../../static/avatar.jpg" alt="avatar" class="w-32 h-32 rounded-full mb-8 lg:mb-0" /></div>
-          <div class="flex-1 text-lg sm:text-xl ml-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae architecto minus molestias iusto ducimus fuga quo quia libero dignissimos, fugiat modi assumenda debitis laboriosam.</div>
-        </div>
+<!--        <div class="flex flex-col sm:flex-row justify-between items-center mb-16">-->
+<!--          <div><g-image src="../../static/avatar.jpg" alt="avatar" class="w-32 h-32 rounded-full mb-8 lg:mb-0" /></div>-->
+<!--          <div class="flex-1 text-lg sm:text-xl ml-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae architecto minus molestias iusto ducimus fuga quo quia libero dignissimos, fugiat modi assumenda debitis laboriosam.</div>-->
+<!--        </div>-->
 
-        <div class="responsive-container">
-          <iframe class="responsive-iframe w-full h-full top-0 left-0 border-0" src="https://www.youtube.com/embed/uHo6o1TNQeE" style="border:0;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div> <!-- end get-to-know me -->
-    </div>
+<!--        <div class="responsive-container">-->
+<!--          <iframe class="responsive-iframe w-full h-full top-0 left-0 border-0" src="https://www.youtube.com/embed/uHo6o1TNQeE" style="border:0;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--        </div>-->
+<!--      </div> &lt;!&ndash; end get-to-know me &ndash;&gt;-->
+<!--    </div>-->
 
     <div class="overflow-x-hidden">
       <div id="contact" style="position: relative; top: -40px; left: 0"/>
@@ -110,7 +130,6 @@
                   <label class="block text-copy-primary mb-2" for="message">
                       Message
                   </label>
-
                   <textarea id="message" rows="5" name="message" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4" placeholder="Enter your message here." required></textarea>
               </div>
 
