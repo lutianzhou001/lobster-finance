@@ -2,7 +2,7 @@
   <Layout>
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16 mt-8">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="leading-tight">We Never HODL Ethereum</div>
+        <div class="leading-tight">We Never HODL GUA</div>
         <div class="text-green-700 leading-tight">We just keep them for the next generation</div>
       </div>
       <div class="mt-8 sm:mt-0">
@@ -11,7 +11,8 @@
     </div> <!-- end hero -->
 
     <div class="container-inner mx-auto">
-      <p class="text-lg sm:text-xl">Most of us cannot hodl the ethereum and sometimes we sold it in a very low price. How to solve our short hand? Now you can transfer your Ethereum to LOBSTER and unlike LP tokens, the LOBSTER is a liquidity proof. When your sell the LOBSTER or transfer them, some of the LOBSTER will be burnt permanently.</p>
+      <p class="text-lg sm:text-xl">{{mainPageDoc}}
+      </p>
 
       <div class="flex justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
@@ -23,76 +24,53 @@
       </div>
     </div>
 
+
     <div class="overflow-x-hidden">
 
+    <div class="container-inner mx-auto">
+      <p class="text-green-700 font-extrabold text-lg sm:text-xl">{{mainPageWaring}}</p>
+      <p class="text-lg sm:text-xl">{{mainPageDeployed}}</p>
 
+    <div class="flex flex-col sm:flex-row">
+      <input name="email" placeholder="0x9F12389e4705Ee67654623BE63459b7912079B76" class="flex-1 bg-background-form rounded sm:rounded-r-none px-4 py-4 leading-normal border border-border-color-primary sm:border-r-0 shadow outline-none focus:border-green-700 z-10">
+      <button @click="pancake" class="flex-2 w-40 uppercase bg-green-700 text-white rounded sm:rounded-l-none text-lg py-3 px-8 tracking-wide shadow focus:outline-none hover:bg-green-800 focus:bg-green-800 z-10 w-full sm:w-auto mt-4 sm:mt-0">
+        <span>{{mainPageBuyButton}}</span>
+      </button>
+    </div>
+    </div>
+    </div>
 
+    <div class="overflow-x-hidden">
 
       <div id="projects" style="position: relative; top: -40px; left: 0"/>
       <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
 
-
-        <div class="w-full mb-12">
-          <label class="block text-copy-primary mb-2" for="message">
-            ETHEREUM
-          </label>
-          <textarea id="ETHEREUM" rows="1" name="message" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4" placeholder="" required></textarea>
-        </div>
-
-        <div class="w-full mb-12">
-          <label class="block text-copy-primary mb-2" for="message">
-            LOBSTER
-          </label>
-          <textarea id="LOBSTER" rows="1" name="message" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4" placeholder="" required></textarea>
-        </div>
-
-        <h2 class="font-bold mb-6">Here are some features of LOBSTER</h2>
-
+        <h2 class="font-bold mb-6">{{mainPageBuyFeatures}}</h2>
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
         </div>
 
         <ul class="text-lg sm:text-xl space-y-6">
           <li class="checkmark">
-            <div>Buy Free</div>
-            <div class="text-lg text-gray-600">Unlike <a href="https://uniswap.org">Uniswap</a>, Buying LOBSTER is totally free except gas fees</div>
+            <div>{{mainPageFeature1header}}</div>
+            <div class="text-lg text-gray-600">{{mainPageFeature1content}}</div>
           </li>
           <li class="checkmark">
-            <div>Sell&Transfer Burns</div>
-            <div class="text-lg text-gray-600">It burns a 37.5% of LOBSTER when anyone sells or transfer the LOBSTER. Whenever LOBSTER is burned, its price is automatically boosted as a result of the reduced total supply.</div>
+            <div>{{mainPageFeature2header}}</div>
+            <div class="text-lg text-gray-600">{{mainPageFeature2content}}</div>
           </li>
           <li class="checkmark">
-            <div>Floor Price</div>
-            <div class="text-lg text-gray-600">DO NOT worried about LOBSTER will drop to zero for an initial of 21000 LOBSTER and 2100 Ethereum are distributed here.In that case, the floor price of LOBSTER will be 0.1 Eth</div>
+            <div>{{mainPageFeature3header}}</div>
+            <div class="text-lg text-gray-600">{{mainPageFeature3content}}</div>
           </li>
           <li class="checkmark">
-            <div>Fair Lauch</div>
-            <div class="text-lg text-gray-600">We will launch this experiment in and ..No presale. No premine. No farming.</div>
+            <div>{{ mainPageFeature4header }}</div>
+            <div class="text-lg text-gray-600">{{mainPageFeature4content}}</div>
           </li>
 
         </ul>
       </div> <!-- end projects -->
     </div>
-
-<!--    <div class="overflow-x-hidden border-gray-200 border-b">-->
-<!--      <div id="about" style="position: relative; top: -40px; left: 0"/>-->
-<!--      <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">-->
-<!--        <h2 class="font-bold mb-6">Get to know me:</h2>-->
-
-<!--        <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">-->
-<!--          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>-->
-<!--        </div>-->
-
-<!--        <div class="flex flex-col sm:flex-row justify-between items-center mb-16">-->
-<!--          <div><g-image src="../../static/avatar.jpg" alt="avatar" class="w-32 h-32 rounded-full mb-8 lg:mb-0" /></div>-->
-<!--          <div class="flex-1 text-lg sm:text-xl ml-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae architecto minus molestias iusto ducimus fuga quo quia libero dignissimos, fugiat modi assumenda debitis laboriosam.</div>-->
-<!--        </div>-->
-
-<!--        <div class="responsive-container">-->
-<!--          <iframe class="responsive-iframe w-full h-full top-0 left-0 border-0" src="https://www.youtube.com/embed/uHo6o1TNQeE" style="border:0;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-<!--        </div>-->
-<!--      </div> &lt;!&ndash; end get-to-know me &ndash;&gt;-->
-<!--    </div>-->
 
     <div class="overflow-x-hidden">
       <div id="contact" style="position: relative; top: -40px; left: 0"/>
@@ -104,7 +82,7 @@
             <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
           </div>
 
-          <p class="mb-12">Static sites cannot submit forms on their own. However, services like <a href="https://www.netlify.com/docs/form-handling">Netlify Forms</a> or <a href="https://formspree.io">FormSpree</a> can help you do this without a backend.</p>
+          <p class="mb-12">{{mainPageContact}}</p>
 
           <div class="text-lg sm:text-lg mb-16">
             <form action="#" class="mb-12">
@@ -173,6 +151,107 @@
 export default {
   metaInfo: {
     title: 'Home'
+  },
+  mounted() {
+    this.$root.A = this;
+  },
+  data() {
+     return {
+       emainPageDoc : "The frog, in the traditional cultures of the East and the West, represents the growth of wealth and the continuation of life.Blockchain participants holding GUA coins are fortunate. They hope that the projects they participate in will never return to zero, never die, and their wealth and destiny will continue to increase.",
+       emainPageWaring : "BE AWARE OF SCAMMERS!",
+       emainPageDeployed: "GUA is Completely decentralized with BEP-20 token launched on BSC with:",
+       emainPageContract: "0x9F12389e4705Ee67654623BE63459b7912079B76",
+       emainPageBuyButton: "BUY GUA NOW",
+       emainPageBuyFeatures:"Here are some features of GUA Coin",
+       emainPageFeature1header:"Initial Blackhole",
+       emainPageFeature1content:"Nearly half of the initial supply of 4 trillion has been completely destroyed, an extremely deflationary economic model",
+       emainPageFeature2header:"Deflation Token",
+       emainPageFeature2content:"3% handling fee is charged for each transfer, of which 1.5% is destroyed and 1.5% is distributed to all GUA holders",
+       emainPageFeature3header:"No pre-mine and reserve",
+       emainPageFeature3content:"GUA does not have any private equity and team reserved shares, and implements community autonomy",
+       emainPageFeature4header:"NFTs and Toys",
+       emainPageFeature4content:"(Coming soon) GUA frog-themed NFT toys, community-driven meme token liquidity mining...",
+       emainPageContact:"A fully decentralized GUA community needs partners with technical, market, and business skills. If you have expertise in the blockchain field or are a loyal fan of GUA, you are welcome to contact the GUA global community.",
+
+
+       zmainPageDoc : "青蛙，在东西方的传统文化中，均代表着财富的增长和生命的延续。 区块链参与者持有GUA币，就是持有这样一份幸运，希望自己参与的项目永不归零、永不消亡，给自己的财富和命运，永远不断+1",
+       zmainPageWaring : "小心骗子！",
+       zmainPageDeployed: "GUA完全在BSC上基于BEP-20协议，此合约地址为",
+       zmainPageContract: "0x9F12389e4705Ee67654623BE63459b7912079B76",
+       zmainPageBuyButton: "现在就买GUA",
+       zmainPageBuyFeatures:"一些GUA的特性",
+       zmainPageFeature1header:"初始黑洞",
+       zmainPageFeature1content:"初始供应量4万亿中接近一半已经完全销毁，极致通缩的经济模型。",
+       zmainPageFeature2header:"转账销毁",
+       zmainPageFeature2content:"每笔转账收取3%的手续费，其中1.5%销毁，1.5%分配给全体持币人。",
+       zmainPageFeature3header:"无预挖，无预留",
+       zmainPageFeature3content:"GUA无任何私募和团队预留份额，实行完全的社区自治。",
+       zmainPageFeature4header:"手办玩具",
+       zmainPageFeature4content:"（敬请期待）GUA青蛙主题NFT玩具、社区驱动的meme代币间流动性挖矿。",
+       zmainPageContact: "完全去中心化的GUA社群需要具备技术、市场、商务技能的伙伴，如果您在区块链领域有一技之长，或者是GUA的忠实粉丝，欢迎您联系GUA全球社区",
+
+
+       mainPageDoc : "The frog, in the traditional cultures of the East and the West, represents the growth of wealth and the continuation of life.Blockchain participants holding GUA coins are fortunate. They hope that the projects they participate in will never return to zero, never die, and their wealth and destiny will continue to increase.",
+       mainPageWaring : "BE AWARE OF SCAMMERS!",
+       mainPageDeployed: "GUA is Completely decentralized with BEP-20 token launched on BSC with:",
+       mainPageContract: "0x9F12389e4705Ee67654623BE63459b7912079B76",
+       mainPageBuyButton: "BUY GUA NOW",
+       mainPageBuyFeatures:"Here are some features of GUA Coin",
+       mainPageFeature1header:"Initial Blackhole",
+       mainPageFeature1content:"Nearly half of the initial supply of 4 trillion has been completely destroyed, an extremely deflationary economic model",
+       mainPageFeature2header:"Deflation Token",
+       mainPageFeature2content:"3% handling fee is charged for each transfer, of which 1.5% is destroyed and 1.5% is distributed to all GUA holders",
+       mainPageFeature3header:"No pre-mine and reserve",
+       mainPageFeature3content:"GUA does not have any private equity and team reserved shares, and implements community autonomy",
+       mainPageFeature4header:"NFTs and Toys",
+       mainPageFeature4content:"(Coming soon) GUA frog-themed NFT toys, community-driven meme token liquidity mining...",
+       mainPageContact:"A fully decentralized GUA community needs partners with technical, market, and business skills. If you have expertise in the blockchain field or are a loyal fan of GUA, you are welcome to contact the GUA global community.",
+       language:"en",
+     }
+  },
+  methods: {
+    swapLanguage() {
+      console.log("zzzzz")
+      if (this.language == "en") {
+        console.log("lll")
+            this.language = "cn";
+            this.mainPageDoc = this.zmainPageDoc;
+            this.mainPageWaring= this.zmainPageWaring;
+            this.mainPageDeployed= this.zmainPageDeployed;
+            this.mainPageContract= this.zmainPageContract;
+            this.mainPageBuyButton= this.zmainPageBuyButton;
+            this.mainPageBuyFeatures= this.zmainPageBuyFeatures;
+            this.mainPageFeature1content= this.zmainPageFeature1content;
+            this.mainPageFeature1header=this.zmainPageFeature1header;
+            this.mainPageFeature2content=this.zmainPageFeature2content;
+            this.mainPageFeature2header= this.zmainPageFeature2header;
+            this.mainPageFeature3content=this.zmainPageFeature3content;
+            this.mainPageFeature3header=this.zmainPageFeature3header;
+            this.mainPageFeature4content=this.zmainPageFeature4content;
+            this.mainPageFeature4header=this.zmainPageFeature4header;
+            this.mainPageContact=this.zmainPageContact;
+      } else {
+        this.language = "en";
+        this.mainPageDoc = this.emainPageDoc;
+        this.mainPageWaring= this.emainPageWaring;
+        this.mainPageDeployed= this.emainPageDeployed;
+        this.mainPageContract= this.emainPageContract;
+        this.mainPageBuyButton=this.emainPageBuyButton;
+        this.mainPageBuyFeatures = this.emainPageBuyFeatures;
+        this.mainPageFeature1content=this.emainPageFeature1content;
+        this.mainPageFeature1header= this.emainPageFeature1header;
+        this.mainPageFeature2content=this.emainPageFeature2content;
+        this.mainPageFeature2header=this.emainPageFeature2header;
+        this.mainPageFeature3content=this.emainPageFeature3content;
+        this.mainPageFeature3header=this.emainPageFeature3header;
+        this.mainPageFeature4content=this.emainPageFeature4content;
+        this.mainPageFeature4header=this.emainPageFeature4header;
+        this.mainPageContact=this.emainPageContact;
+      }
+    },
+    pancake() {
+      window.location.href = 'https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x9F12389e4705Ee67654623BE63459b7912079B76&lang=en'
+    },
   }
 }
 </script>

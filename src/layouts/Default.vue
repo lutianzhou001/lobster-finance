@@ -27,12 +27,8 @@
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
           </li>
           <li>
-            <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="{ el: '#projects', offset: -25 }" class="text-copy-primary hover:text-gray-600" data-cypress="projects">Projects</a>
+            <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="{ el: '#projects', offset: -25 }" class="text-copy-primary hover:text-gray-600" data-cypress="projects">Features</a>
             <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
-          </li>
-          <li>
-            <a v-if="$route.path === '/'" href="/#about" v-scroll-to="{ el: '#about', offset: -90 }" class="text-copy-primary hover:text-gray-600" data-cypress="about">About</a>
-            <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
           </li>
           <li>
             <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="{ el: '#contact', offset: -25 }" class="text-copy-primary hover:text-gray-600" data-cypress="contact">Contact</a>
@@ -42,7 +38,7 @@
             <g-link to="/docs" class="text-copy-primary hover:text-gray-600" data-cypress="docs">Docs</g-link>
           </li>
           <li>
-            <g-link to="/blog" class="text-copy-primary hover:text-gray-600" data-cypress="blog">Blog</g-link>
+            <button @click="swapLanguage" class="text-copy-primary hover:text-gray-600">文/EN</button>
           </li>
         </ul>
       </nav>
@@ -112,6 +108,7 @@ query {
 <script>
 import SearchInput from '../components/SearchInput'
 import ThemeSwitcher from '../components/ThemeSwitcher'
+import MainPage from '../pages/Index'
 
 export default {
   components: {
@@ -128,6 +125,12 @@ export default {
     }
   },
   methods: {
+    swapLanguage() {
+      console.log("aaa")
+      this.$root.A.swapLanguage();
+      // MainPage.methods.mainPageDoc = "sss"
+      // MainPage.methods.swapLanguage()
+    },
     scrollToTop() {
       window.scrollTo(0,0);
     },
