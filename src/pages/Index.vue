@@ -1,5 +1,10 @@
 <template>
   <Layout>
+
+    <div class="sm:max-w-full px-8 py-8 sm:py-0">
+      <g-image src="../../static/banner.png" alt="browser" />
+    </div>
+
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16 mt-8">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
         <div class="leading-tight">We Never HODL GUA</div>
@@ -126,7 +131,7 @@
         <h2 class="text-2xl font-bold mb-8">Join my Newsletter</h2>
 
         <div class="w-4/5 mx-auto mb-8">
-          <p class="mb-8 text-lg sm:text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, voluptatum. Quam, deleniti nulla.</p>
+          <p class="mb-8 text-lg sm:text-xl">By editing your email address and clicking subscribe, You can get some messages from GUA team.</p>
 
           <form action="#">
             <div class="flex flex-col sm:flex-row">
@@ -211,7 +216,6 @@ export default {
   },
   methods: {
     swapLanguage() {
-      console.log("zzzzz")
       if (this.language == "en") {
         console.log("lll")
             this.language = "cn";

@@ -5,29 +5,27 @@
     <div class="newsletter">
       <div id="newsletter" style="position: relative; top: -40px; left: 0"/>
       <div class="container-inner mx-auto py-16 pb-8 text-center textl-xl">
-        <h2 class="text-2xl font-bold mb-8">Docs Title</h2>
+        <h2 class="text-3xl font-bold mb-8">{{ docPageTitle }}</h2>
       </div>
 
 
     <div class="container-inner mx-auto">
-      <p class="text-lg sm:text-xl bg-green-700 font-bold">Step 1: Install MetaMask For Chrome</p>
-      <p class="text-lg sm:text-xl">Open your Google Chrome and visit <a href="https://metamask.io/">metamask.io</a>.</p>
-        Download the MetaMask chrome extension and set up a wallet. On mobile? Get MetaMask app for iPhone or Android.
-      </p>
-      <p class="text-lg sm:text-xl bg-green-700 font-bold">Step 2: Connect to BSC rpc sever</p>
-      <p class="text-lg sm:text-xl">Open metamask and link to BSC chain by this:</p>
-      <p class="text-lg sm:text-xl">Net name:Binance Smart Chain</p>
-      <p class="text-lg sm:text-xl">RPC url:https://bsc-dataseed4.binance.org</p>
-      <p class="text-lg sm:text-xl">Chain ID:56</p>
-      <p class="text-lg sm:text-xl">Symbol:BNB</p>
-      <p class="text-lg sm:text-xl">Browser url:<a href="https://bscscan.com/">https://bscscan.com/</a></p>
+      <p class="text-lg sm:text-2xl bg-green-700 font-bold">{{ docPageStep1}}</p>
+      <p class="text-lg sm:text-xl">{{ docPageContent11}}<a href="https://metamask.io/">{{ docPageContent12}}</a>.</p>
+      <p class="text-lg sm:text-xl">{{ docPageContent13}}</p>
+      <p class="text-lg sm:text-2xl bg-green-700 font-bold">{{ docPageStep2}}</p>
+      <p class="text-lg sm:text-xl">{{ docPageContent21}}</p>
+      <p class="text-lg sm:text-xl">{{ docPageContent22}}</p>
+      <p class="text-lg sm:text-xl">{{ docPageContent23}}</p>
+      <p class="text-lg sm:text-xl">{{ docPageContent24}}</p>
+      <p class="text-lg sm:text-xl">{{ docPageContent251}}<a href="https://bscscan.com/">{{ docPageContent252}}</a></p>
 
 
-      <p class="text-lg sm:text-xl bg-green-700 font-bold">Step 3: Connect To Pancakeswap</p>
-      <p class="text-lg sm:text-xl">The safest place to buy GUA is on <a href="https://exchange.pancakeswap.finance/#/swap">Pancakeswap</a>. Visit <a href="https://exchange.pancakeswap.finance/#/swap">Pancakeswap</a>. and click"connect wallet".</p>
+      <p class="text-lg sm:text-2xl bg-green-700 font-bold">{{ docPageStep3}}</p>
+      <p class="text-lg sm:text-xl">{{ docPageContent31}}<a href="https://exchange.pancakeswap.finance/#/swap">{{ docPageContent32}}</a>{{ docPageContent33}}<a href="https://exchange.pancakeswap.finance/#/swap">{{ docPagecontent34}}</a>{{ docPagecontent35}}</p>
 
-      <p class="text-lg sm:text-xl bg-green-700 font-bold">Swap USDT For GUA</p>
-      <p class="text-lg sm:text-xl">Set your slippage to 15% and enter and the amount of USDT you would like to swap for GUA, or you can just click <a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x9F12389e4705Ee67654623BE63459b7912079B76&lang=en">HERE</a> to buy GUA.</p>
+      <p class="text-lg sm:text-2xl bg-green-700 font-bold">{{ docPageStep4}}</p>
+      <p class="text-lg sm:text-xl">{{ docPageContent41}}<a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x9F12389e4705Ee67654623BE63459b7912079B76&lang=en">{{ docPageContent42}}</a>{{ docPageContent43}}</p>
       <div class="flex justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
           <g-image src="../../static/mind_map.svg" alt="browser" />
@@ -76,100 +74,131 @@ export default {
     title: 'Home'
   },
   mounted() {
-    this.$root.A = this;
+    this.$root.B = this;
   },
   data() {
     return {
-      emainPageDoc : "The frog, in the traditional cultures of the East and the West, represents the growth of wealth and the continuation of life.Blockchain participants holding GUA coins are fortunate. They hope that the projects they participate in will never return to zero, never die, and their wealth and destiny will continue to increase.",
-      emainPageWaring : "BE AWARE OF SCAMMERS!",
-      emainPageDeployed: "GUA is Completely decentralized with BEP-20 token launched on BSC with:",
-      emainPageContract: "0x9F12389e4705Ee67654623BE63459b7912079B76",
-      emainPageBuyButton: "BUY GUA NOW",
-      emainPageBuyFeatures:"Here are some features of GUA Coin",
-      emainPageFeature1header:"Initial Blackhole",
-      emainPageFeature1content:"Nearly half of the initial supply of 4 trillion has been completely destroyed, an extremely deflationary economic model",
-      emainPageFeature2header:"Deflation Token",
-      emainPageFeature2content:"3% handling fee is charged for each transfer, of which 1.5% is destroyed and 1.5% is distributed to all GUA holders",
-      emainPageFeature3header:"No pre-mine and reserve",
-      emainPageFeature3content:"GUA does not have any private equity and team reserved shares, and implements community autonomy",
-      emainPageFeature4header:"NFTs and Toys",
-      emainPageFeature4content:"(Coming soon) GUA frog-themed NFT toys, community-driven meme token liquidity mining...",
-      emainPageContact:"A fully decentralized GUA community needs partners with technical, market, and business skills. If you have expertise in the blockchain field or are a loyal fan of GUA, you are welcome to contact the GUA global community.",
+      edocPageTitle: "How to buy GUA",
+      edocPageStep1: "Step 1: Install MetaMask For Chrome",
+      edocPageStep2:"Step 2: Connect to BSC rpc sever",
+      edocPageStep3:"Step 3: Connect To Pancakeswap",
+      edocPageStep4:"Step 4: Swap USDT For GUA",
+      edocPageContent11:"Open your Google Chrome and visit",
+      edocPageContent13: "Download the MetaMask chrome extension and set up a wallet. On mobile? Get MetaMask app for iPhone or Android.",
+      edocPageContent12:" metamask.io",
+      edocPageContent21:"Open metamask and link to BSC chain by this:",
+      edocPageContent22:"Net name:  Binance Smart Chain",
+      edocPageContent23:"Chain ID:  56",
+      edocPageContent24:"Symbol:  BNB",
+      edocPageContent251:"Browser url:  ",
+      edocPageContent252:"https://bscscan.com/",
+      edocPageContent31:"The safest place to buy GUA is on ",
+      edocPageContent32:"Pancakeswap",
+      edocPageContent33:". Visit ",
+      edocPagecontent34:"Pancakeswap",
+      edocPagecontent35:". and click\"connect wallet\".",
+      edocPageContent41:"Set your slippage to 15% and enter and the amount of USDT you would like to swap for GUA, or you can just click ",
+      edocPageContent42:"HERE",
+      edocPageContent43:" to buy GUA.",
 
 
-      zmainPageDoc : "青蛙，在东西方的传统文化中，均代表着财富的增长和生命的延续。 区块链参与者持有GUA币，就是持有这样一份幸运，希望自己参与的项目永不归零、永不消亡，给自己的财富和命运，永远不断+1",
-      zmainPageWaring : "小心骗子！",
-      zmainPageDeployed: "GUA完全在BSC上基于BEP-20协议，此合约地址为",
-      zmainPageContract: "0x9F12389e4705Ee67654623BE63459b7912079B76",
-      zmainPageBuyButton: "现在就买GUA",
-      zmainPageBuyFeatures:"一些GUA的特性",
-      zmainPageFeature1header:"初始黑洞",
-      zmainPageFeature1content:"初始供应量4万亿中接近一半已经完全销毁，极致通缩的经济模型。",
-      zmainPageFeature2header:"转账销毁",
-      zmainPageFeature2content:"每笔转账收取3%的手续费，其中1.5%销毁，1.5%分配给全体持币人。",
-      zmainPageFeature3header:"无预挖，无预留",
-      zmainPageFeature3content:"GUA无任何私募和团队预留份额，实行完全的社区自治。",
-      zmainPageFeature4header:"手办玩具",
-      zmainPageFeature4content:"（敬请期待）GUA青蛙主题NFT玩具、社区驱动的meme代币间流动性挖矿。",
-      zmainPageContact: "完全去中心化的GUA社群需要具备技术、市场、商务技能的伙伴，如果您在区块链领域有一技之长，或者是GUA的忠实粉丝，欢迎您联系GUA全球社区",
+      zdocPageTitle: "如何购买GUA",
+      zdocPageStep1: "第一步：安装适合您谷歌浏览器的MetaMask钱包",
+      zdocPageStep2:"第二步：连接到币安智能链（BSC）",
+      zdocPageStep3:"第三步： 连接到BSC上的去中心化交易所Pancakeswap",
+      zdocPageStep4:"第四步： 用USDT兑换GUA",
+      zdocPageContent11:"打开谷歌浏览器，访问",
+      zdocPageContent13: "下载MetaMask并设置好钱包，如果是移动端请下载合适手机的IOS或者Android版本。",
+      zdocPageContent12:" metamask.io",
+      zdocPageContent21:"打开MetaMask并通过以下方式链接到BSC：",
+      zdocPageContent22:"网址：Binance Smart Chain",
+      zdocPageContent23:"链ID：56",
+      zdocPageContent24:"代号：BNB",
+      zdocPageContent251:"浏览器网址：",
+      zdocPageContent252:"https://bscscan.com/",
+      zdocPageContent31:"购买GUA的最安全的地方就是在",
+      zdocPageContent32:"Pancakeswap",
+      zdocPageContent33:"。访问 ",
+      zdocPagecontent34:"Pancakeswap",
+      zdocPagecontent35:"，然后点击：\"连接钱包\"。",
+      zdocPageContent41:"滑点设置为15%，然后输入您想要兑换GUA的USDT的数量，最后您可以点击\"确认\", 或者您也可以直接点击 ",
+      zdocPageContent42:"这里",
+      zdocPageContent43:"来购买GUA",
 
-
-      mainPageDoc : "The frog, in the traditional cultures of the East and the West, represents the growth of wealth and the continuation of life.Blockchain participants holding GUA coins are fortunate. They hope that the projects they participate in will never return to zero, never die, and their wealth and destiny will continue to increase.",
-      mainPageWaring : "BE AWARE OF SCAMMERS!",
-      mainPageDeployed: "GUA is Completely decentralized with BEP-20 token launched on BSC with:",
-      mainPageContract: "0x9F12389e4705Ee67654623BE63459b7912079B76",
-      mainPageBuyButton: "BUY GUA NOW",
-      mainPageBuyFeatures:"Here are some features of GUA Coin",
-      mainPageFeature1header:"Initial Blackhole",
-      mainPageFeature1content:"Nearly half of the initial supply of 4 trillion has been completely destroyed, an extremely deflationary economic model",
-      mainPageFeature2header:"Deflation Token",
-      mainPageFeature2content:"3% handling fee is charged for each transfer, of which 1.5% is destroyed and 1.5% is distributed to all GUA holders",
-      mainPageFeature3header:"No pre-mine and reserve",
-      mainPageFeature3content:"GUA does not have any private equity and team reserved shares, and implements community autonomy",
-      mainPageFeature4header:"NFTs and Toys",
-      mainPageFeature4content:"(Coming soon) GUA frog-themed NFT toys, community-driven meme token liquidity mining...",
-      mainPageContact:"A fully decentralized GUA community needs partners with technical, market, and business skills. If you have expertise in the blockchain field or are a loyal fan of GUA, you are welcome to contact the GUA global community.",
+      docPageTitle: "How to buy GUA",
+      docPageStep1: "Step 1: Install MetaMask For Chrome",
+      docPageStep2:"Step 2: Connect to BSC rpc sever",
+      docPageStep3:"Step 3: Connect To Pancakeswap",
+      docPageStep4:"Step 4: Swap USDT For GUA",
+      docPageContent11:"Open your Google Chrome and visit",
+      docPageContent13: "Download the MetaMask chrome extension and set up a wallet. On mobile? Get MetaMask app for iPhone or Android.",
+      docPageContent12:" metamask.io",
+      docPageContent21:"Open metamask and link to BSC chain by this:",
+      docPageContent22:"Net name:  Binance Smart Chain",
+      docPageContent23:"Chain ID:  56",
+      docPageContent24:"Symbol:  BNB",
+      docPageContent251:"Browser url:  ",
+      docPageContent252:"https://bscscan.com/",
+      docPageContent31:"The safest place to buy GUA is on ",
+      docPageContent32:"Pancakeswap",
+      docPageContent33:". Visit ",
+      docPagecontent34:"Pancakeswap",
+      docPagecontent35:". and click\"connect wallet\".",
+      docPageContent41:"Set your slippage to 15% and enter and the amount of USDT you would like to swap for GUA, or you can just click ",
+      docPageContent42:"HERE",
+      docPageContent43:" to buy GUA.",
       language:"en",
     }
   },
   methods: {
     swapLanguage() {
-      console.log("zzzzz")
       if (this.language == "en") {
-        console.log("lll")
         this.language = "cn";
-        this.mainPageDoc = this.zmainPageDoc;
-        this.mainPageWaring= this.zmainPageWaring;
-        this.mainPageDeployed= this.zmainPageDeployed;
-        this.mainPageContract= this.zmainPageContract;
-        this.mainPageBuyButton= this.zmainPageBuyButton;
-        this.mainPageBuyFeatures= this.zmainPageBuyFeatures;
-        this.mainPageFeature1content= this.zmainPageFeature1content;
-        this.mainPageFeature1header=this.zmainPageFeature1header;
-        this.mainPageFeature2content=this.zmainPageFeature2content;
-        this.mainPageFeature2header= this.zmainPageFeature2header;
-        this.mainPageFeature3content=this.zmainPageFeature3content;
-        this.mainPageFeature3header=this.zmainPageFeature3header;
-        this.mainPageFeature4content=this.zmainPageFeature4content;
-        this.mainPageFeature4header=this.zmainPageFeature4header;
-        this.mainPageContact=this.zmainPageContact;
+        this.docPageTitle =  this.zdocPageTitle;
+            this.docPageStep1= this.zdocPageStep1
+            this.docPageStep2 = this.zdocPageStep2
+            this.docPageStep3 = this.zdocPageStep3
+            this.docPageStep4 =this.zdocPageStep4
+            this.docPageContent11  =this.zdocPageContent11
+            this.docPageContent13 =this.zdocPageContent13
+            this.docPageContent12 =this.zdocPageContent12
+            this.docPageContent21 = this.zdocPageContent21
+            this.docPageContent22 = this.zdocPageContent22
+            this.docPageContent23 =this.zdocPageContent23
+            this.docPageContent24 =this.zdocPageContent24
+            this.docPageContent251 = this.zdocPageContent251
+            this.docPageContent252= this.zdocPageContent252
+            this.docPageContent31 =this.zdocPageContent31
+            this.docPageContent32 = this.zdocPageContent32
+            this.docPageContent33 = this.zdocPageContent33
+            this.docPagecontent34 = this.zdocPagecontent34
+            this.docPagecontent35 =this.zdocPagecontent35
+            this.docPageContent41 =this.zdocPageContent41
+            this.docPageContent42 = this.zdocPageContent42
+            this.docPageContent43 =this.zdocPageContent43
       } else {
-        this.language = "en";
-        this.mainPageDoc = this.emainPageDoc;
-        this.mainPageWaring= this.emainPageWaring;
-        this.mainPageDeployed= this.emainPageDeployed;
-        this.mainPageContract= this.emainPageContract;
-        this.mainPageBuyButton=this.emainPageBuyButton;
-        this.mainPageBuyFeatures = this.emainPageBuyFeatures;
-        this.mainPageFeature1content=this.emainPageFeature1content;
-        this.mainPageFeature1header= this.emainPageFeature1header;
-        this.mainPageFeature2content=this.emainPageFeature2content;
-        this.mainPageFeature2header=this.emainPageFeature2header;
-        this.mainPageFeature3content=this.emainPageFeature3content;
-        this.mainPageFeature3header=this.emainPageFeature3header;
-        this.mainPageFeature4content=this.emainPageFeature4content;
-        this.mainPageFeature4header=this.emainPageFeature4header;
-        this.mainPageContact=this.emainPageContact;
+        this.language = "en"
+        this.docPageStep1= this.edocPageStep1
+        this.docPageStep2 = this.edocPageStep2
+        this.docPageStep3 = this.edocPageStep3
+        this.docPageStep4 =this.edocPageStep4
+        this.docPageContent11  =this.edocPageContent11
+        this.docPageContent13 =this.edocPageContent13
+        this.docPageContent12 =this.edocPageContent12
+        this.docPageContent21 = this.edocPageContent21
+        this.docPageContent22 = this.edocPageContent22
+        this.docPageContent23 =this.edocPageContent23
+        this.docPageContent24 =this.edocPageContent24
+        this.docPageContent251 = this.edocPageContent251
+        this.docPageContent252= this.edocPageContent252
+        this.docPageContent31 =this.edocPageContent31
+        this.docPageContent32 = this.edocPageContent32
+        this.docPageContent33 = this.edocPageContent33
+        this.docPagecontent34 = this.edocPagecontent34
+        this.docPagecontent35 =this.edocPagecontent35
+        this.docPageContent41 =this.edocPageContent41
+        this.docPageContent42 = this.edocPageContent42
+        this.docPageContent43 =this.edocPageContent43
       }
     },
     pancake() {
